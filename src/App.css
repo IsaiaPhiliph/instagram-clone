@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bgColor: #fafafa;
+}
+.app {
+    background-color: var(--bgColor);
+    height: 100%;
+}
+.app__headerImage {
+    max-width: 103px;
+}
+.app__header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    object-fit: contain;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.app__signup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.app__toDo {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    list-style: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.app__toDo li {
+    margin: 5px 0;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 3px;
+}
+.app__toDo form {
+    width: 100%;
+    display: flex;
+}
+.app__toDo form input {
+    flex: 1;
+}
